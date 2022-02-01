@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root{
+	--primary-bg-color: #161616;
+	--primary-accent-color: #B93333;
+	--primary-text-color: #ffffff;
+	--secondary-text-color: #8D8C8C;
+	--primary-font: 'Poppins', sans-serif; 
+	--secondary-font: 'chalkduster', serif;
+}
+
+@font-face {
+  font-family: chalkduster;
+  src: url(./fonts/Chalkduster.ttf);
+}
