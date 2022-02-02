@@ -1,5 +1,5 @@
 <main>
-	<h1>SAE-Infinite-Challengers</h1>
+	<h1>SAE-Infinite-Challengers - Modified</h1>
 	<h2>Home Page</h2>
 </main>
 
