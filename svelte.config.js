@@ -7,7 +7,8 @@ const config = {
 
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
-	}
+	},
+	noExternal: ["svelte-hero-icons"],
 };
 
 export default config;
