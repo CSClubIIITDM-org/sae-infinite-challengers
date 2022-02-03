@@ -29,9 +29,7 @@
 
 <style>
     .about-us {
-        /* margin-top: 100px; */
         width: 100vw;
-        /* height: 100vh; */
     }
 
     .about-us .about-us__title p {
@@ -50,9 +48,6 @@
         margin: 4rem 0;
         height: 200px;
         background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url('/static/index/background-rectangle.png') center center no-repeat;
-        /* background-color: var(--primary-bg-color);
-        box-shadow: 0 0 10px 2px rgb(107, 10, 10);
-        border-radius: 2rem; */
     }
     .about-us__stats h1 {
         font-size: 3rem;
@@ -78,5 +73,34 @@
     .about-us__ending p {
         font-size: 2.5rem;
         font-family: var(--secondary-font);
+    }
+
+    @media (max-width: 800px) {
+        .about-us .about-us__title p {
+            font-size: 2rem;
+        }
+
+        .about-us__stats {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            background-image: none;
+        }
+
+        .about-us__content {
+            margin-top: 0;
+        }
+        .about-us__content p {
+            font-size: 1rem;
+        }
+
+        .about-us__ending {
+            margin: 0 auto 80px auto;
+        }
+        .about-us__ending p {
+            padding: 1rem 3rem;
+            font-size: 2rem;
+        }
     }
 </style>
