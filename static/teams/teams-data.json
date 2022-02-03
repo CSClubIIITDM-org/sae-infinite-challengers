@@ -1,0 +1,179 @@
+[
+	{
+		"id": "01",
+		"title": "team leads",
+		"members": [
+			{
+				"id": "1",
+				"name": "Vineeth Sagar",
+				"role": "Team Captain"
+			},
+			{
+				"id": "2",
+				"name": "K Mithelesh",
+				"role": "Vice Captain"
+			},
+			{
+				"id": "3",
+				"name": "Sukesh JR",
+				"role": "Team Manager"
+			}
+		]
+	},
+	{
+		"id": "02",
+		"title": "rollcage team",
+		"members": [
+			{
+				"id": "1",
+				"name": "Bhanu Teja Bale",
+				"role": "Rollcage Head"
+			},
+			{
+				"id": "2",
+				"name": "S Nirai",
+				"role": "Design Engineer"
+			},
+			{
+				"id": "3",
+				"name": "Prashant Jha",
+				"role": "Design Engineer"
+			},
+			{
+				"id": "4",
+				"name": "Vishnu Vardhan I",
+				"role": "Design Engineer"
+			}
+		]
+	},
+	{
+		"id": "03",
+		"title": "suspension",
+		"members": [
+			{
+				"id": "1",
+				"name": "Goutham Bandaru",
+				"role": "Suspension Head"
+			},
+			{
+				"id": "2",
+				"name": "Vishnu Varma",
+				"role": "Design Engineer"
+			},
+			{
+				"id": "3",
+				"name": "Ruthwik Dasyam",
+				"role": "Design Engineer"
+			},
+			{
+				"id": "4",
+				"name": "Ravi Shankar",
+				"role": "Design Engineer"
+			},
+			{
+				"id": "5",
+				"name": "Ayush Awadhiya",
+				"role": "Design Engineer"
+			}
+		]
+	},
+	{
+		"id": "04",
+		"title": "steering",
+		"members": [
+			{
+				"id": "1",
+				"name": "Mahankali Sripaad",
+				"role": "Steering Head"
+			},
+			{
+				"id": "2",
+				"name": "Sai Namurth",
+				"role": "Design Engineer"
+			},
+			{
+				"id": "3",
+				"name": "Harshavardhan Reddy",
+				"role": "Design Engineer"
+			}
+		]
+	},
+	{
+		"id": "05",
+		"title": "powertrain",
+		"members": [
+			{
+				"id": "1",
+				"name": "S Abaethan",
+				"role": "Powertrain Head"
+			},
+			{
+				"id": "2",
+				"name": "Vyshnav K",
+				"role": "Design Engineer"
+			},
+			{
+				"id": "3",
+				"name": "Vismay Chand",
+				"role": "Design Engineer"
+			},
+			{
+				"id": "4",
+				"name": "Joseph Melvin",
+				"role": "Design Engineer"
+			},
+			{
+				"id": "5",
+				"name": "Christo Tony",
+				"role": "Design Engineer"
+			}
+		]
+	},
+	{
+		"id": "06",
+		"title": "brakes",
+		"members": [
+			{
+				"id": "1",
+				"name": "K Mithelesh",
+				"role": "Brakes head"
+			},
+			{
+				"id": "2",
+				"name": "Ameen",
+				"role": "Vice Captain"
+			},
+			{
+				"id": "3",
+				"name": "Sukesh JR",
+				"role": "S Gopikrishna"
+			}
+		]
+	},
+	{
+		"id": "07",
+		"title": "electronics",
+		"members": [
+			{
+				"id": "1",
+				"name": "Sukesh JR",
+				"role": "Electronics Head"
+			},
+			{
+				"id": "2",
+				"name": "Mohamed Ismail",
+				"role": "Electronics Engineer"
+			},
+			{
+				"id": "3",
+				"name": "Pranay Krishna",
+				"role": "Electronics Engineer"
+			},
+			{
+				"id": "4",
+				"name": "Mohamed Akil K",
+				"role": "Mechatronics Design Engineer"
+			}
+		]
+	}
+]
