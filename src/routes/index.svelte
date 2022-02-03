@@ -1,6 +1,5 @@
 <script>
     import About from "/src/components/About.svelte";
-    // import Saos from 'saos';
 </script>
 
 <main>
@@ -16,18 +15,15 @@
         </div>
     </div>
 
-    <!-- <Saos animation={'from-bottom 1s cubic-bezier(0.35, 0.5, 0.65, 0.95)'} once={true}> -->
-        <section class="About" id="about">
-            <About/>
-        </section>
-    <!-- </Saos> -->
+    <section class="About" id="about">
+        <About/>
+    </section>
 </main>
 
 <style>
     main {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         text-align: center;
     }
@@ -70,12 +66,10 @@
         }
 
         .title {
-            /* border: solid red; */
             width: 100vw;
             height: 50vh;
             background-size: 100%;
         }
-
         .title p {
             font-size: 10vw;
         }
