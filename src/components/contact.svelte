@@ -1,4 +1,4 @@
-<footer class="contact">
+<!-- <footer class="contact">
 	<h1 class="heading">Contact Us</h1>
 	<section class="location-info row">
 		<div class="address column">
@@ -45,18 +45,21 @@
 </footer>
 
 <style>
+	* {
+		scroll-behavior: smooth;
+	}
+
 	.location-info {
 		margin-top: 45px;
 	}
 	.heading {
 		font-family: var(--secondary-font);
-	}
+			}
 	h1 {
 		background: url('./brushBg.png') no-repeat center center;
 		font-weight: bolder;
-		margin: 10px 600px 10px 500px;
-		background-size: 425px 100px;
-		font-size: 60px;
+		background-size: contain;
+		font-size: 40px;
 	}
 	h3 {
 		color: var(--primary-accent-color);
@@ -90,7 +93,7 @@
 		padding-left: 25px;
 	}
 
-	@media screen and (max-width: 720px) {
+	@media screen and (max-width: 945px) {
 		.heading {
 			width: 25%;
 			font-size: 30px;
@@ -107,6 +110,151 @@
 		}
 		.map img {
 			width: 80%;
+		}
+	}
+</style> -->
+
+<footer>
+	<h1 class="heading">Contact Us</h1>
+	<div class="flex-container location_info">
+		<div class="flex-item-left">
+			<div class="address">
+				<h3>Infinite Challengers</h3>
+				<p>IIITDM Kancheepuram Campus, Chennai, TamilNadu-600127</p>
+				<p>Email:saeclub@iiitdm.ac.in</p>
+
+				<br />
+
+				<h3>Vineet Sengar</h3>
+				<p>Team Captain</p>
+				<p>Mob No:+91 91316 93095</p>
+				<p>Email: mpd17i018@iiitdm.ac.in</p>
+
+				<br />
+
+				<h3>Mitelesh</h3>
+				<p>Team Captain</p>
+				<p>Mob No:+91 91766 77701</p>
+				<p>Email: mpd18i008@iiitdm.ac.in</p>
+
+				<br />
+
+				<h3>Sukesh</h3>
+				<p>Team Manager</p>
+				<p>Mob No:+91 86103 81270</p>
+				<p>Email: mdm19b024@iiitdm.ac.in</p>
+
+				<br />
+
+				<br />
+				<br />
+			</div>
+		</div>
+		<div class="flex-item-right">
+			<a href="https://goo.gl/maps/NZBSQfC8KD9aRJFr5">
+				<img src="/static/institute-map.png" alt="Institute map" />
+			</a>
+		</div>
+	</div>
+	<h2 class="copyright">Developed by <span>CS Club</span></h2>
+</footer>
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	.location_info {
+		margin-top: 45px;
+	}
+	.heading {
+		font-family: var(--secondary-font);
+		text-align: center;
+		background: url('./brushBg.png') no-repeat center center;
+		font-weight: bolder;
+		background-size: contain;
+	}
+	h3 {
+		color: var(--primary-accent-color);
+	}
+
+	h2 span {
+		color: var(--primary-accent-color);
+	}
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		text-align: left;
+	}
+
+	.flex-item-left {
+		padding-left: 20px;
+		flex: 50%;
+		font-size: 18px;
+	}
+
+	.flex-item-right {
+		padding: 10px;
+		flex: 50%;
+	}
+
+	.flex-item-right img {
+		width: 600px;
+		height: 500px;
+		border-radius: 10px;
+	}
+
+	.copyright {
+		text-align: center;
+		font-size: 25px;
+	}
+
+	@media (max-width: 950px) {
+		.location_info {
+			margin-top: 20px;
+		}
+		.flex-container {
+			flex-direction: column;
+			text-align: center;
+		}
+		.flex-item-left {
+			font-size: 15px;
+		}
+		.flex-item-right img {
+			width: 270px;
+			height: 225px;
+			border-radius: 10px;
+		}
+		.heading {
+			font-size: 25px;
+			margin-top: 15px;
+		}
+		.copyright {
+			font-size: 15px;
+		}
+	}
+
+	@media (max-width: 720px) {
+		.location_info {
+			margin-top: 10px;
+		}
+		.flex-container {
+			flex-direction: column;
+			text-align: center;
+		}
+		.flex-item-left {
+			font-size: 13px;
+		}
+		.flex-item-right img {
+			width: 240px;
+			height: 180px;
+			border-radius: 10px;
+		}
+		.heading {
+			font-size: 25px;
+			margin-top: 15px;
+		}
+		.copyright {
+			font-size: 13px;
 		}
 	}
 </style>

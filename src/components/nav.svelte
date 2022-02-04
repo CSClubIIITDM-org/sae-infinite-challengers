@@ -12,32 +12,34 @@
 </script>
 
 <main>
-	<div class="navbar">
-		<div class="nav-header">
-			<div class="nav-logo">
-				<a href="/">
-					<img src="/static/logo.png" width="100px" alt="Infinite Challengers Logo" />
-				</a>
+	<nav>
+		<div class="navbar">
+			<div class="nav-header">
+				<div class="nav-logo">
+					<a href="/">
+						<img src="/static/logo.png" width="100px" alt="Infinite Challengers Logo" />
+					</a>
+				</div>
+			</div>
+
+			<input type="checkbox" id="nav-check" />
+			<div class="nav-btn">
+				<label for="nav-check">
+					<span />
+					<span />
+					<span />
+				</label>
+			</div>
+
+			<div class="nav-links" on:click={handleClick}>
+				<a href="/" class="link active">Home</a>
+				<a href="/#about" class="link">About</a>
+				<a href="/team" class="link">Team</a>
+				<a href="/sponsers" class="link">Sponsers</a>
+				<a href="/competition" class="link">Competition</a>
 			</div>
 		</div>
-
-		<input type="checkbox" id="nav-check" />
-		<div class="nav-btn">
-			<label for="nav-check">
-				<span />
-				<span />
-				<span />
-			</label>
-		</div>
-
-		<div class="nav-links" on:click={handleClick}>
-			<a href="/" class="link active">Home</a>
-			<a href="/#about" class="link">About</a>
-			<a href="/team" class="link">Team</a>
-			<a href="/sponsers" class="link">Sponsers</a>
-			<a href="/competition" class="link">Competition</a>
-		</div>
-	</div>
+	</nav>
 </main>
 
 <style>
@@ -47,11 +49,12 @@
 		box-sizing: border-box;
 	}
 
-	.navbar {
-		height: 100px;
+	nav {
+		position: fixed;
+		height: 80px;
 		width: 100%;
 		padding: 15px 40px;
-		position: relative;
+		background-color: var(--primary-bg-color);
 	}
 	.navbar .nav-header {
 		display: inline;
@@ -89,7 +92,7 @@
 		display: none;
 	}
 
-	@media (max-width: 720px) {
+	@media (max-width: 950px) {
 		.navbar .nav-btn {
 			display: inline-block;
 			position: absolute;
@@ -114,7 +117,7 @@
 			display: block;
 			text-align: center;
 			width: 100%;
-			background-color: black;
+			background-color: var(--primary-bg-color);
 			transition: all 0.3s ease-in;
 			overflow-y: hidden;
 			top: 70px;
