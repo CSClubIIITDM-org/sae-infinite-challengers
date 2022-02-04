@@ -46,6 +46,7 @@
 <style>
 	* {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
 	}
 	.location_info {
 		margin-top: 45px;
