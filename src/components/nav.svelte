@@ -1,21 +1,23 @@
 <script>
-	function handleClick() {
-		const checkbox = document.querySelector('#nav-check');
-		var links = document.querySelectorAll('.link');
-		console.log(checkbox);
-		console.log(links);
-		Array.from(links).forEach((item) => {
-			item.addEventListener('click', () => {
-				if(checkbox.checked == true) {
-					checkbox.checked = false;
+	import { onMount } from 'svelte';
+	let checkBox;
+	let links;
+	onMount(() => {
+		checkBox = document.getElementById('nav-check');
+		links = document.querySelectorAll('.link');
+		links.forEach((link) => {
+			link.addEventListener('click', (e) => {
+				console.log(window.location);
+				links.forEach((link) => {
+					link.classList.remove('active');
+				});
+				e.target.classList.add('active');
+				if (checkBox.checked) {
+					checkBox.checked = false;
 				}
-				var selected = document.getElementsByClassName('active');
-				selected[0].className = selected[0].className.replace(' active', '');
-				item.className += ' active';
-
 			});
 		});
-	}
+	});
 </script>
 
 <main>
@@ -38,7 +40,7 @@
 				</label>
 			</div>
 
-			<div class="nav-links" on:click={handleClick}>
+			<div class="nav-links">
 				<a href="/" class="link active">Home</a>
 				<a href="/#about" class="link">About</a>
 				<a href="/team" class="link">Team</a>
@@ -62,6 +64,7 @@
 		width: 100%;
 		padding: 15px 40px;
 		background-color: var(--primary-bg-color);
+		z-index: 999;
 	}
 	.navbar .nav-header {
 		display: inline;
@@ -77,11 +80,11 @@
 		font-size: 18px;
 		margin-top: 10px;
 	}
-	
+
 	.nav-links a {
 		position: relative;
 	}
-	
+
 	.nav-links a:after {
 		content: '';
 		position: absolute;
@@ -94,12 +97,12 @@
 		transform-origin: bottom right;
 		transition: transform 0.25s ease-out;
 	}
-	
+
 	.nav-links a:hover:after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
 	}
-	
+
 	.navbar .nav-links a {
 		margin: 10px 40px;
 		text-decoration: none;
@@ -114,7 +117,7 @@
 	.navbar .nav-links .active:hover {
 		transform: none;
 	}
-	
+
 	.navbar #nav-check,
 	.navbar .nav-btn {
 		display: none;
