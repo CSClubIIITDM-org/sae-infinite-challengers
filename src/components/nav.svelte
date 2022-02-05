@@ -1,11 +1,18 @@
 <script>
 	function handleClick() {
+		const checkbox = document.querySelector('#nav-check');
 		var links = document.querySelectorAll('.link');
+		console.log(checkbox);
+		console.log(links);
 		Array.from(links).forEach((item) => {
 			item.addEventListener('click', () => {
+				if(checkbox.checked == true) {
+					checkbox.checked = false;
+				}
 				var selected = document.getElementsByClassName('active');
 				selected[0].className = selected[0].className.replace(' active', '');
 				item.className += ' active';
+
 			});
 		});
 	}
@@ -61,8 +68,8 @@
 	}
 	.navbar .nav-header .nav-logo {
 		display: inline-block;
-		margin-top: -19px;
-		margin-left: -30px;
+		margin-top: -15px;
+		margin-left: -25px;
 	}
 	.navbar .nav-links {
 		display: inline;
@@ -70,23 +77,44 @@
 		font-size: 18px;
 		margin-top: 10px;
 	}
-	.active {
-		background: url('./static/brushBg.png') no-repeat center center;
-		background-size: contain;
-		border-radius: 5px;
-		transition: 0.3s ease;
+	
+	.nav-links a {
+		position: relative;
 	}
+	
+	.nav-links a:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		transform: scaleX(0);
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: var(--primary-accent-color);
+		transform-origin: bottom right;
+		transition: transform 0.25s ease-out;
+	}
+	
+	.nav-links a:hover:after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
+	
 	.navbar .nav-links a {
-		padding: 10px 40px 10px;
+		margin: 10px 40px;
 		text-decoration: none;
 		font-weight: 550;
 		color: white;
 	}
-	.navbar .nav-links a:hover {
-		background: url('./brushBg.png') no-repeat center center;
-		background-size: contain;
-	}
 
+	.navbar .nav-links .active {
+		border-bottom: solid var(--primary-accent-color) 2px;
+		transition: 0.3s ease;
+	}
+	.navbar .nav-links .active:hover {
+		transform: none;
+	}
+	
 	.navbar #nav-check,
 	.navbar .nav-btn {
 		display: none;
@@ -127,8 +155,14 @@
 			display: block;
 		}
 		.navbar .nav-links a:hover {
-			background: url('./brushBg.png') center center;
-			background-size: cover;
+			color: var(--primary-accent-color);
+		}
+		.navbar .nav-links a::after {
+			height: 0;
+		}
+		.navbar .nav-links .active {
+			border: none;
+			color: var(--primary-accent-color);
 		}
 
 		.navbar #nav-check:not(:checked) ~ .nav-links {

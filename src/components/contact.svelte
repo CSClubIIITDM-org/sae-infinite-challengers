@@ -52,11 +52,12 @@
 		margin-top: 45px;
 	}
 	.heading {
-		font-family: var(--secondary-font);
+		font-family: var(--primary-font);
+		font-style: italic;
+		color: var(--primary-accent-color);
+		font-size: 4rem;
 		text-align: center;
-		background: url('./brushBg.png') no-repeat center center;
 		font-weight: bolder;
-		background-size: contain;
 	}
 	h3 {
 		color: var(--primary-accent-color);
@@ -110,7 +111,7 @@
 			border-radius: 10px;
 		}
 		.heading {
-			font-size: 25px;
+			font-size: 3rem;
 			margin-top: 15px;
 		}
 		.copyright {
@@ -135,7 +136,7 @@
 			border-radius: 10px;
 		}
 		.heading {
-			font-size: 25px;
+			font-size: 2rem;
 			margin-top: 15px;
 		}
 		.copyright {

@@ -38,10 +38,11 @@
     }
     .about-us .about-us__title p {
         padding: 10px;
-        font-family: var(--secondary-font);
-        font-size: 3rem;
-		background: url('./brushBg.png') no-repeat center center;
-        background-size: contain;
+        font-family: var(--primary-font);
+        color: var(--primary-accent-color);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 4rem;
     }
 
     .about-us__stats {
@@ -52,6 +53,7 @@
         margin: 4rem 0;
         height: 350px;
         background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url('/static/index/background-rectangle.png') center center no-repeat;
+        background-size: cover;
     }
     .about-us__stats div {
         padding: 20px;
@@ -78,7 +80,7 @@
     .about-us__ending p {
         font-size: 2.5rem;
         font-family: var(--primary-font);
-        color: var(--primary-accent-color);
+        color: var(--secondary-text-color);
         font-weight: bold;
     }
 

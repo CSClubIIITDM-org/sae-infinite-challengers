@@ -43,12 +43,13 @@
 		padding-top: 10px;
 	}
 	.heading {
-		margin-top: 20px;
-		font-family: var(--secondary-font);
-		font-size: 3rem;
-		background: url('./brushBg.png') no-repeat center center;
+		margin-top: 100px;
+		font-family: var(--primary-font);
+		font-style: italic;
+		font-size: 4rem;
+		font-weight: bold;
+		color: var(--primary-accent-color);
 		text-align: center;
-		background-size: contain;
 	}
 	.title {
 		margin: 1rem 0;

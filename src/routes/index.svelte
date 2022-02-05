@@ -51,7 +51,8 @@
 
     .challenging-the-infinity p {
         margin: 6rem 0;
-        font-size: 2.8vw;
+        font-size: 2.5rem;
+        font-weight: bold;
         color: var(--secondary-text-color);
     }
     .first-half img {

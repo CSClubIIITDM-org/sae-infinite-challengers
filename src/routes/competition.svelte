@@ -1,19 +1,23 @@
+<script>
+	import Saos from 'saos';
+</script>
+
 <main>
-	<h2>Competition</h2>
-	<div class="numbers">
-		<div class="blocks">
-			50+ <br />
-			<div class="labelBlock">Countries</div>
-		</div>
-		<div class="blocks">
-			500+ <br />
-			<div class="labelBlock">Teams</div>
-		</div>
-		<div class="blocks">
-			10000+ <br />
-			<div class="labelBlock">Students</div>
-		</div>
-	</div>
+	<Saos animation={'from-bottom 1s cubic-bezier(0.35, 0.5, 0.65, 0.95)'}>
+	<div class="about-us__stats">
+        <div class="about-us__stats1">
+            <h1><b>50+</b></h1>
+            <p>Countries</p>
+        </div>
+        <div class="about-us__stats2">
+            <h1><b>500+</b></h1>
+            <p>Teams</p>
+        </div>
+        <div class="about-us__stats3">
+            <h1><b>10000+</b></h1>
+            <p>Students</p>
+        </div>
+    </div>
 	<br /><br />
 	<div class="comp">
 		<p>
@@ -56,71 +60,75 @@
 		</div>
 	</div>
 	<div />
+	</Saos>
 </main>
 
 <style>
 	main {
 		display: grid;
 		place-items: center;
-		/**padding: 0.25rem 2rem;**/
+		width: 100vw !important;
+		overflow-y: hidden;
 	}
-	h2 {
-		background: url('./brushBg.png') center center;
-		background-size: contain;
-		font-weight: 4rem;
-		font-size: 2rem;
-		margin: 10px 0;
-		font-family: url('./fonts/Chalkduster.ttf');
-	}
+	
 	h3 {
+		text-align: center;
 		font-size: 2rem;
 	}
-	.numbers {
-		background: url('./bg_comp.png');
+
+	.about-us__stats {
+		width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 7rem 0 2rem 0;
+        height: 350px;
+        background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url('/static/bg_comp.png') center center no-repeat;
 		background-size: cover;
-		background-repeat: no-repeat;
-		width: 100%;
-		background-attachment: scroll;
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-	}
-	.blocks {
-		font-size: 3rem;
-		padding: 3rem;
-	}
+    }
+    .about-us__stats div {
+        padding: 20px;
+    }
+    .about-us__stats h1 {
+        font-size: 3.5rem;
+    }
+    .about-us__stats p {
+        font-size: 2.5rem;
+    }
+	
 	.comp {
-		padding: 2rem;
+		padding: 0 2rem;
 	}
-	p {
+	.comp p {
+		text-align: center;
 		font-size: 1.5rem;
 	}
-	.labelBlock {
-		font-size: 2rem;
+	h3 {
+		font-size: 1.5rem;
+		padding: 0 2rem;
 	}
 	.headEvents {
-		background: url('./brushBg.png') center center;
-		background-size: contain;
+		font-style: italic;
+		font-weight: bold;
+		color: var(--primary-accent-color);
 		justify-content: space-evenly;
 		align-items: center;
 		font-size: 2rem;
+		margin: 2rem 0;
 	}
 	.events {
+		width: 60vw;
 		display: flex;
-		padding: 10%;
+		justify-content: space-around;
+		margin: 0 auto 50px auto;
 	}
 	.eventBlocks {
 		flex-direction: column;
 		padding: 3rem;
-		padding-left: 5rem;
-		padding-right: 5rem;
 	}
 	.blockElements {
 		font-size: 1.5rem;
 	}
-	@media (max-width: 720px) {
-		.numbers {
-			flex-direction: column;
-		}
-	}
+	
 </style>
