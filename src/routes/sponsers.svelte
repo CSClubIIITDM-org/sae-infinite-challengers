@@ -24,9 +24,18 @@
     <div class="our-sponsors">
         <div class="title"><p>OUR SPONSORS</p></div>
         <div class="sponsors">
-            <div class="sponsor1">DLC</div>
-            <div class="sponsor2">DESINGERS CLUB</div>
-            <div class="sponsor3">TLC</div>
+            <div class="sponsor1">
+                <p>DIC</p>
+                <img src="/static/sponsors/DIC.svg" alt="DIC">
+            </div>
+            <div class="sponsor2">
+                <p>DESINGERS CLUB</p>
+                <img src="/static/sponsors/iiitdm.svg" alt="Desingers_Club">
+            </div>
+            <div class="sponsor3">
+                <p>TLC</p>
+                <img src="/static/sponsors/TLC.svg" alt="TLC">
+            </div>
         </div>
     </div>
 </main>
@@ -39,19 +48,20 @@
     }
 
     .title {
-        margin-top: 50px;
+        margin-top: 100px;
     }
     .title p {
-        font-family: var(--secondary-font);
-        font-size: 3rem;
-        background: url('./brushBg.png') center center no-repeat;
-        font-weight: 400;
+        font-family: var(--primary-font);
+        font-size: 4rem;
+        font-style: italic;
+        color: var(--primary-accent-color);
+        font-weight: bold;
         margin: 10px 0;
     }
 
     .points {
-        width: 60vw;
-        margin: 100px auto 50px auto;
+        width: 70vw;
+        margin: 100px auto;
         text-align: left;
     }
     .points ul li {
@@ -61,23 +71,26 @@
     }
 
     .ending {
-        width: 100vw;
+        width: 80vw;
         font-family: var(--secondary-font);
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         font-size: 2rem;
     }
     .ending div {
-        margin: 3rem 6rem;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin: 1rem;
         width: 250px;
+        background: linear-gradient(145deg, #141414, #181818);
+        box-shadow: 12px 12px 33px #101010, -12px -12px 33px #1c1c1c;
     }
 
     .our-sponsors {
-        margin-top: 100px;
-        width: 100vw;
-        height: 60vh;
+        margin: 100px auto;
+        width: 80vw;
     }
 
     .our-sponsors .sponsors {
@@ -85,18 +98,45 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         font-size: 3rem;
-        font-family: var(--secondary-font);
-        margin-top: 200px;
+        font-family: var(--primary-font);
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .sponsors div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 300px;
+        padding: 50px;
+        border-radius: 2rem;
+        transition: all 0.3s;
+    }
+    .sponsors div:hover {
+        background: linear-gradient(145deg, #141414, #181818);
+        box-shadow: 12px 12px 33px #101010, -12px -12px 33px #1c1c1c;
+        cursor: pointer;
+    }
+    .sponsors div p {
+        font-size: 2rem;
+    }
+    .sponsors .sponsor3 img {
+        margin-bottom: 40px;
+    }
+    .sponsors img {
+        width: 200px;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
         .title {
             margin-top: 0;
             background-size: contain;
         }
         .title p {
             padding: 10px;
-            font-size: 2rem;
+            font-size: 3rem;
         }
 
         .points {
@@ -104,26 +144,61 @@
             width: 80vw;
         }
         .points ul li {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
 
         .ending div {
             font-size: 1.5rem;
-            margin: 2rem;
+            margin: 1rem;
         }
 
         .our-sponsors {
             margin-top: 50px;
-            height: 80vh;
+            height: auto;
         }
         .our-sponsors .sponsors {
-            font-size: 2rem;
+            font-size: 1rem;
             margin: 0px;
             height: 80%;
         }
         .our-sponsors .sponsors div {
             align-self: center;
-            margin: 2rem;
+            margin: 1rem;
+        }
+        .sponsors div {
+            padding: 20px;
+            height: 200px;
+        }
+        .sponsors img {
+            width: 100px;
+        }
+        .sponsors .sponsor3 img {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .title p {
+            font-size: 2rem;
+        }
+        .points {
+            margin: 50px auto;
+        }
+        .points ul li {
+            font-size: 1rem;
+        }
+        .our-sponsors {
+            height: auto;
+        }
+        .sponsors div {
+            height: 150px;
+            width: 70vw;
+        }
+        .sponsors img {
+            width: 100px;
+        }
+        .sponsors div p {
+            font-size: 1.5rem;
         }
     }
 </style>

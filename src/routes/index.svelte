@@ -1,84 +1,117 @@
 <script>
     import About from "/src/components/About.svelte";
+    import Saos from 'saos';
 </script>
 
 <main>
     <div class="first-half">
         <div class="title">
-            <p>INFINITE</p>
-            <p>CHALLENGER</p>
+            <p>INFINITE<br>CHALLENGER</p>
         </div>
 
         <div class="challenging-the-infinity">
             <p>Challenging The Infinity</p>
-            <img src="/static/index/keyboard_arrow_down.svg" alt="">
         </div>
+        <img src="/static/index/keyboard_arrow_down.svg" alt="">
     </div>
 
+    
     <section class="About" id="about">
-        <About/>
+        <Saos animation={'from-bottom 1s cubic-bezier(0.35, 0.5, 0.65, 0.95)'}>
+            <div class="blank"></div>
+            <About/>
+        </Saos>
     </section>
 </main>
 
 <style>
     main {
+        text-align: center; 
+    }
+
+    .first-half {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-    }
-    
-    .first-half {
-        display: grid;
         justify-content: center;
         width: 100vw;
         height: 100vh;
     }
     .title {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         margin-top: 50px;
-        width: 60vw;
-        height: 35vw;
         background: url('/static/index/car.png') center center no-repeat;
-        background-size: 80%;
+        background-size: 45rem auto;
     }
     .title p {
-        margin: 5vw 0 5vw 0;
+        line-height: 16rem;
         font-family: var(--secondary-font);
-        font-size: 8vw;
-        text-shadow: 0px 10px 10px gray;
+        font-size: 7rem;
+        text-shadow: 0px 0px 10px gray;
     }
 
     .challenging-the-infinity p {
-        font-size: 3rem;
+        margin: 6rem 0;
+        font-size: 2.8vw;
         color: var(--secondary-text-color);
     }
+    .first-half img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 15px;
+        animation: arrow-animation 1.5s infinite;
+    }
 
-    @media (max-width: 800px) {
-        .first-half {
-            height: 93vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+    @keyframes arrow-animation {
+        0% {
+            transform: translateY(0);
+            opacity: 0;
         }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+    }
 
+    #about .blank {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    @media (max-width: 900px) {
         .title {
-            width: 100vw;
-            height: 50vh;
-            background-size: 100%;
+            background-size: 40rem auto;
         }
         .title p {
-            font-size: 10vw;
+            line-height: 15rem;
+            font-size: 5rem;
         }
 
         .challenging-the-infinity p {
-            font-size: 2rem;
+            margin: 5rem 0 7rem 0;
+            font-size: 2.5rem;
         }
-        .challenging-the-infinity img {
-            width: 4rem;
+        .first-half img {
+            width: 80px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .title {
+            background-size: 25rem auto;
+        }
+        .title p {
+            line-height: 9rem;
+            font-size: 3rem;
+        }
+        .challenging-the-infinity p {
+            margin: 4rem 0 5rem 0;
+            font-size: 1.8rem;
         }
     }
 </style>
