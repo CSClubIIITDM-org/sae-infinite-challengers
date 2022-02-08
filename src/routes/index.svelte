@@ -38,14 +38,14 @@
         height: 100vh;
     }
     .title {
-        margin-top: 80px;
+        margin-top: 120px;
         background: url('/static/index/car.png') center center no-repeat;
-        background-size: 45rem auto;
+        background-size: 40rem auto;
     }
     .title p {
-        line-height: 16rem;
+        line-height: 15rem;
         font-family: var(--secondary-font);
-        font-size: 7rem;
+        font-size: 6rem;
         text-shadow: 0px 0px 10px gray;
     }
 
