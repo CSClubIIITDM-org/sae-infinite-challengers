@@ -26,7 +26,7 @@
 			<div class="nav-header">
 				<div class="nav-logo">
 					<a href="/">
-						<img src="/static/logo.png" width="100px" alt="Infinite Challengers Logo" />
+						<img src="./logo.png" width="100px" alt="Infinite Challengers Logo" />
 					</a>
 				</div>
 			</div>
