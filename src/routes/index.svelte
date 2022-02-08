@@ -26,7 +26,7 @@
 
 <style>
     main {
-        text-align: center; 
+        text-align: center;
     }
 
     .first-half {
@@ -38,7 +38,7 @@
         height: 100vh;
     }
     .title {
-        margin-top: 50px;
+        margin-top: 80px;
         background: url('/static/index/car.png') center center no-repeat;
         background-size: 45rem auto;
     }
