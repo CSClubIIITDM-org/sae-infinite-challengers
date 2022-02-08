@@ -31,15 +31,15 @@
         <div class="sponsors">
             <div class="sponsor1">
                 <p>DIC</p>
-                <img src="/static/sponsors/DIC.svg" alt="DIC">
+                <img src="./sponsors/DIC.svg" alt="DIC">
             </div>
             <div class="sponsor2">
                 <p>DESINGERS CLUB</p>
-                <img src="/static/sponsors/iiitdm.svg" alt="Desingers_Club">
+                <img src="./sponsors/iiitdm.svg" alt="Desingers_Club">
             </div>
             <div class="sponsor3">
                 <p>TLC</p>
-                <img src="/static/sponsors/TLC.svg" alt="TLC">
+                <img src="./sponsors/TLC.svg" alt="TLC">
             </div>
         </div>
     </div>
