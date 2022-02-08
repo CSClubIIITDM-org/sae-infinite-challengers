@@ -44,7 +44,7 @@
 				<a href="/" class="link active">Home</a>
 				<a href="/#about" class="link">About</a>
 				<a href="/team" class="link">Team</a>
-				<a href="/sponsers" class="link">Sponsers</a>
+				<a href="/sponsers" class="link">Sponsors</a>
 				<a href="/competition" class="link">Competition</a>
 			</div>
 		</div>
