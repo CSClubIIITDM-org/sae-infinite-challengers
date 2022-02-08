@@ -36,7 +36,7 @@
 		</div>
 		<div class="flex-item-right">
 			<a href="https://goo.gl/maps/NZBSQfC8KD9aRJFr5">
-				<img src="/static/institute-map.png" alt="Institute map" />
+				<img src="./institute-map.png" alt="Institute map" />
 			</a>
 		</div>
 	</div>
