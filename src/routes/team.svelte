@@ -3,6 +3,10 @@
 	import Saos from 'saos';
 </script>
 
+<svelte:head>
+	<title>Infinite Challenger | Team</title>
+</svelte:head>
+
 <main>
 	<h1 class="heading">Team</h1>
 	{#each teams as team (team.id)}

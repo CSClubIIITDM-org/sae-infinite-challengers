@@ -2,6 +2,10 @@
 	import Saos from 'saos';
 </script>
 
+<svelte:head>
+	<title>Infinite Challenger | Sponsers</title>
+</svelte:head>
+
 <main>
 	<Saos animation={'from-bottom 1s cubic-bezier(0.35, 0.5, 0.65, 0.95)'}>
 		<div class="why-sponsor-us">
