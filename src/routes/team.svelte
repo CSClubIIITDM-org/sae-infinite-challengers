@@ -1,6 +1,5 @@
 <script>
 	import teams from './../../static/teams/teams-data.json';
-	import Swiper from './../components/swiper.svelte';
 	import Saos from 'saos';
 </script>
 
@@ -27,13 +26,6 @@
 			</section>
 		</Saos>
 	{/each}
-	<Saos animation={'from-bottom 1s cubic-bezier(0.35, 0.5, 0.65, 0.95)'} once={true}>
-		<div class="title">
-			<h1>08</h1>
-			<h2>Team Posts</h2>
-		</div>
-		<Swiper />
-	</Saos>
 </main>
 
 <style>
@@ -104,7 +96,7 @@
 		margin-top: 20px;
 		position: relative;
 		width: 100%;
-		height: 3rem;
+		height: 3.5rem;
 	}
 	.member-details h1 {
 		position: absolute;

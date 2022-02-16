@@ -37,6 +37,9 @@
 		<div class="flex-item-right">
 			<a href="https://goo.gl/maps/NZBSQfC8KD9aRJFr5">
 				<img src="./institute-map.png" alt="Institute map" />
+				<div class="overlay">
+					<img src="./sponsors/iiitdm.svg" alt="IIITDM-Logo" />
+				</div>
 			</a>
 		</div>
 	</div>
@@ -81,8 +84,13 @@
 	.flex-item-right {
 		padding: 10px;
 		flex: 50%;
+		display: grid;
+		/* position: relative; */
+		place-items: center;
 	}
-
+	.flex-item-right a {
+		position: relative;
+	}
 	.flex-item-right img {
 		width: 600px;
 		height: 500px;
@@ -94,6 +102,19 @@
 		font-size: 25px;
 	}
 
+	.overlay {
+		position: absolute;
+		inset: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		align-items: center;
+	}
+
+	.overlay img {
+		height: 50%;
+	}
 	@media (max-width: 950px) {
 		.location_info {
 			margin-top: 20px;

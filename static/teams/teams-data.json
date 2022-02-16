@@ -141,12 +141,12 @@
 			{
 				"id": "2",
 				"name": "Ameen",
-				"role": "Vice Captain"
+				"role": "Design Engineer"
 			},
 			{
 				"id": "3",
-				"name": "Sukesh JR",
-				"role": "S Gopikrishna"
+				"name": "S Gopikrishna",
+				"role": "Design Engineer"
 			}
 		]
 	},
@@ -162,17 +162,17 @@
 			{
 				"id": "2",
 				"name": "Mohamed Ismail",
-				"role": "Electronics Engineer"
+				"role": "Design Engineer"
 			},
 			{
 				"id": "3",
 				"name": "Pranay Krishna",
-				"role": "Electronics Engineer"
+				"role": "Design Engineer"
 			},
 			{
 				"id": "4",
 				"name": "Mohamed Akil K",
-				"role": "Mechatronics Design Engineer"
+				"role": "Design Engineer"
 			}
 		]
 	}
