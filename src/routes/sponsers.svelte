@@ -1,5 +1,20 @@
 <script>
 	import Saos from 'saos';
+	import { onMount } from 'svelte';
+	onMount(() => {
+		const brouchure = document.querySelector('.brouchure');
+		const overlay = document.querySelector('.overlay');
+		const brouchureButton = document.querySelector('.brouchure-button');
+		brouchureButton.addEventListener('click', () => {
+			overlay.classList.remove('hidden');
+			brouchure.classList.remove('hidden');
+		});
+		overlay.addEventListener('click', () => {
+			console.log('1211');
+			overlay.classList.add('hidden');
+			brouchure.classList.add('hidden');
+		});
+	});
 </script>
 
 <svelte:head>
@@ -25,8 +40,10 @@
 					<li>Helping students to follow their passion</li>
 				</ul>
 			</div>
+			<div class="brouchure-container">
+				<div class="brouchure-button">SPONSORSHIP BROCHURE</div>
+			</div>
 			<div class="ending">
-				<div class="1">SPONSORSHIP BROCHURE</div>
 				<div class="2">COLLABORATE WITH US</div>
 				<div class="3">CROWD FUNDING</div>
 			</div>
@@ -54,6 +71,10 @@
 			</div>
 		</div>
 	</Saos>
+	<div class="overlay hidden" />
+	<div class="brouchure hidden">
+		<embed src="./brouchure.pdf" type="application/pdf" />
+	</div>
 </main>
 
 <style>
@@ -61,6 +82,7 @@
 		display: grid;
 		place-items: center;
 		text-align: center;
+		position: relative;
 	}
 
 	.title {
@@ -86,7 +108,8 @@
 		list-style: disc;
 	}
 
-	.ending {
+	.ending,
+	.brouchure-container {
 		width: 80vw;
 		font-family: var(--secondary-font);
 		display: flex;
@@ -95,12 +118,19 @@
 		align-items: center;
 		font-size: 2rem;
 	}
-	.ending div {
+	.ending div,
+	.brouchure-button {
 		border-radius: 1rem;
 		padding: 2rem;
 		margin: 1rem;
 		width: 250px;
-		background: linear-gradient(145deg, #141414, #181818);
+		cursor: pointer;
+	}
+	.brouchure-button {
+		box-shadow: 12px 12px 33px #000000, -12px -12px 33px #2c2c2c;
+	}
+	.ending div:hover {
+		transition: all 0.3s;
 		box-shadow: 12px 12px 33px #101010, -12px -12px 33px #1c1c1c;
 	}
 
@@ -144,7 +174,27 @@
 	.sponsors img {
 		width: 200px;
 	}
-
+	.brouchure {
+		position: fixed;
+		inset: 50px;
+		top: 80px;
+		z-index: 100;
+	}
+	.brouchure embed {
+		width: 90vw;
+		height: 80vh;
+	}
+	.overlay {
+		position: absolute;
+		inset: 0;
+		height: 100%;
+		z-index: 100;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.hidden {
+		display: none;
+	}
 	@media (max-width: 900px) {
 		.title {
 			background-size: contain;

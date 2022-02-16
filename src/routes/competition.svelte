@@ -36,6 +36,19 @@
 			</p>
 			<br /><br />
 		</div>
+		<div id="player-container">
+			<video id="player" playsinline controls poster="./poster.png">
+				<source src="./video.mp4" type="video/mp4" />
+
+				<track
+					kind="captions"
+					label="English captions"
+					src="/path/to/captions.vtt"
+					srclang="en"
+					default
+				/>
+			</video>
+		</div>
 		<h3>
 			The competition is divided into 2 categories - Static and Dynamics - which account for a total
 			of 1000 points.
@@ -73,6 +86,18 @@
 		place-items: center;
 		width: 100vw !important;
 		overflow-y: hidden;
+	}
+
+	#player-container {
+		width: 100%;
+		display: grid;
+		height: 55vh;
+		place-items: center;
+	}
+	#player {
+		height: 55vh;
+		border-radius: 0.4rem;
+		margin: auto auto;
 	}
 
 	h3 {
