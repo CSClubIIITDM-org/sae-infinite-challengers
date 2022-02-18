@@ -9,11 +9,34 @@
 
 <main>
 	<h1 class="heading">Team</h1>
+	<section>
+		<div class="title">
+			<h1>01</h1>
+			<h2>Advisors</h2>
+		</div>
+		<div class="members">
+			<div class="member">
+				<img src="./teams/advisors/1.png" alt="member-img" />
+				<div class="member-details">
+					<h1>Faculty Advisor</h1>
+					<h2>Dr.Kashfull Orra</h2>
+				</div>
+			</div>
+
+			<div class="member">
+				<img src="./teams/advisors/2.png" alt="member-img" />
+				<div class="member-details">
+					<h1>Faculty Advisor</h1>
+					<h2>Dr. Shubhankar</h2>
+				</div>
+			</div>
+		</div>
+	</section>
 	{#each teams as team (team.id)}
 		<Saos animation={'from-bottom 1s cubic-bezier(0.35, 0.5, 0.65, 0.95)'} once={true}>
 			<section>
 				<div class="title">
-					<h1>{team.id}</h1>
+					<h1>{'0' + (parseInt(team.id) + 1)}</h1>
 					<h2>{team.title}</h2>
 				</div>
 				<div class="members" class:mem3={team.members.length === 3}>
