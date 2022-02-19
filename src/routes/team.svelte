@@ -12,7 +12,7 @@
 	<section>
 		<div class="title">
 			<h1>01</h1>
-			<h2>Advisors</h2>
+			<h2>Faculty Advisors</h2>
 		</div>
 		<div class="members">
 			<div class="member">
