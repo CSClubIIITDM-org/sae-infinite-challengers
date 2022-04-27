@@ -68,6 +68,22 @@
 					<p>IIITDM Alumini</p>
 					<img src="./sponsors/iiitdm.svg" alt="TLC" />
 				</div>
+				<div class="sponsor4">
+					<p>Koshi Motors</p>
+					<img src="./sponsors/koshi.jpeg" alt="TLC" />
+				</div>
+				<div class="sponsor4">
+					<p>HDFC Bank</p>
+					<img src="./sponsors/hdfc.jpeg" alt="TLC" />
+				</div>
+				<div class="sponsor4">
+					<p>Indian Bank, Allahabad</p>
+					<img src="./sponsors/allahabad.jpeg" alt="TLC" />
+				</div>
+				<div class="sponsor4">
+					<p>Scolarian Racing</p>
+					<img src="./sponsors/scolarian.png" alt="TLC" />
+				</div>
 			</div>
 		</div>
 	</Saos>
