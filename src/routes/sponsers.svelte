@@ -52,35 +52,35 @@
 		<div class="our-sponsors">
 			<div class="title"><p>OUR SPONSORS</p></div>
 			<div class="sponsors">
-				<div class="sponsor1">
+				<div class="sponsor">
 					<p>DIC</p>
 					<img src="./sponsors/DIC.svg" alt="DIC" />
 				</div>
-				<div class="sponsor2">
+				<div class="sponsor">
 					<p>DESINGERS CLUB</p>
 					<img src="./sponsors/iiitdm.svg" alt="Desingers_Club" />
 				</div>
-				<div class="sponsor3">
+				<div class="sponsor">
 					<p>TLC</p>
 					<img src="./sponsors/TLC.svg" alt="TLC" />
 				</div>
-				<div class="sponsor4">
+				<div class="sponsor">
 					<p>IIITDM Alumini</p>
 					<img src="./sponsors/iiitdm.svg" alt="TLC" />
 				</div>
-				<div class="sponsor4">
+				<div class="sponsor">
 					<p>Koshi Motors</p>
 					<img src="./sponsors/koshi.jpeg" alt="TLC" />
 				</div>
-				<div class="sponsor4">
+				<div class="sponsor">
 					<p>HDFC Bank</p>
 					<img src="./sponsors/hdfc.jpeg" alt="TLC" />
 				</div>
-				<div class="sponsor4">
+				<div class="sponsor">
 					<p>Indian Bank, Allahabad</p>
 					<img src="./sponsors/allahabad.jpeg" alt="TLC" />
 				</div>
-				<div class="sponsor4">
+				<div class="sponsor">
 					<p>Scolarian Racing</p>
 					<img src="./sponsors/scolarian.png" alt="TLC" />
 				</div>
@@ -210,6 +210,15 @@
 	}
 	.hidden {
 		display: none;
+	}
+	.sponsors .sponsor {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.sponsors .sponsor p {
+		margin-bottom: 50px;
 	}
 	@media (max-width: 900px) {
 		.title {
