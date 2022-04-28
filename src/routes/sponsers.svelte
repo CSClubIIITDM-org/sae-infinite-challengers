@@ -77,7 +77,7 @@
 					<img src="./sponsors/hdfc.jpeg" alt="TLC" />
 				</div>
 				<div class="sponsor">
-					<p>Indian Bank, Allahabad</p>
+					<p>Indian Bank</p>
 					<img src="./sponsors/allahabad.jpeg" alt="TLC" />
 				</div>
 				<div class="sponsor">
